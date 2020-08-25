@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"uarttocan\startup_stm32f103xb.o"
+"uarttocan\main.o"
+"uarttocan\gpio.o"
+"uarttocan\can.o"
+"uarttocan\dma.o"
+"uarttocan\usart.o"
+"uarttocan\stm32f1xx_it.o"
+"uarttocan\stm32f1xx_hal_msp.o"
+"uarttocan\stm32f1xx_hal_gpio_ex.o"
+"uarttocan\stm32f1xx_hal_can.o"
+"uarttocan\stm32f1xx_hal_tim.o"
+"uarttocan\stm32f1xx_hal_tim_ex.o"
+"uarttocan\stm32f1xx_hal_uart.o"
+"uarttocan\stm32f1xx_hal.o"
+"uarttocan\stm32f1xx_hal_rcc.o"
+"uarttocan\stm32f1xx_hal_rcc_ex.o"
+"uarttocan\stm32f1xx_hal_gpio.o"
+"uarttocan\stm32f1xx_hal_dma.o"
+"uarttocan\stm32f1xx_hal_cortex.o"
+"uarttocan\stm32f1xx_hal_pwr.o"
+"uarttocan\stm32f1xx_hal_flash.o"
+"uarttocan\stm32f1xx_hal_flash_ex.o"
+"uarttocan\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "UARTtoCAN\UARTtoCAN.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UARTtoCAN.map" -o UARTtoCAN\UARTtoCAN.axf
